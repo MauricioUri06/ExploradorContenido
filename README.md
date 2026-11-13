@@ -10,7 +10,7 @@ Página web en ASP.NET Core MVC que consume cuatro APIs públicas (citas, perros
 
 ## Repositorio
 
-_(pegar enlace de GitHub)_
+https://github.com/MauricioUri06/ExploradorContenido.git
 
 ## Tecnologías
 
