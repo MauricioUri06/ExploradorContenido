@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Explorador de contenido aleatorio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="encabezado text-white">
+        <div class="container py-4">
+            <h1 class="h2 mb-1">Explorador de contenido aleatorio</h1>
+            <p class="mb-0 opacity-75">Citas, perros, gatos y datos curiosos obtenidos desde APIs públicas.</p>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top py-3 text-center text-body-secondary small">
+        Programación Web III &middot; Univalle
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
