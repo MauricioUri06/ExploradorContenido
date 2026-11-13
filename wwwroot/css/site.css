@@ -1,6 +1,6 @@
 :root {
-    --color-principal: #4f46e5;
-    --color-principal-oscuro: #3730a3;
+    --color-principal: #1e5631;
+    --color-principal-oscuro: #123b20;
 }
 
 [hidden] {
@@ -36,12 +36,19 @@ main {
 .btn-primary {
     background-color: var(--color-principal);
     border-color: var(--color-principal);
+    border-radius: 0;
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:disabled {
     background-color: var(--color-principal-oscuro);
     border-color: var(--color-principal-oscuro);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(30, 86, 49, 0.4);
 }
 
 .zona-texto {
